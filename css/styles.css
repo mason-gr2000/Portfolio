@@ -1,0 +1,183 @@
+/*
+Mason Gryder
+styles.css
+09/16/2026
+*/
+body {
+    margin:0;
+    padding:0;
+    border:0;
+    background-color: #010b17;
+}
+/*header styling*/
+header {
+    margin:0;
+    padding:0;
+    border:0;
+    color: white;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+/*nav styling*/
+nav {
+    margin:0;
+    padding:0;
+    border:0;
+    background-color: #079bf6;
+    text-align: center;
+}
+nav ul {
+    text-align: center;
+}
+nav li {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5em;
+}
+nav li a {
+    display: block;
+    color: black;
+    padding: 0.5em;
+}
+/*main content styling*/
+main {
+    margin:0;
+    padding:2%;
+    border:0;
+    color: white;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #010b17;
+}
+/*footer styling*/
+footer {
+    margin:0;
+    padding:1%;
+    border:0;
+    text-align: center;
+    font-size: 0.85em;
+    padding-right: 0%;
+    padding-left: 0%;
+    background-color: #079bf6;
+    color: black;
+}
+/*image styling*/
+img {
+    margin:0 auto;
+    padding:0;
+    border:0;
+    max-width: 100%;
+    display: block;
+}
+/*heading styling*/
+h1 {
+    margin:0;
+    padding:0;
+    border:0;
+}
+h3 {
+    margin:0;
+    padding:0;
+    border:0;
+}
+/*class and id styling*/
+.link {
+    font-style: italic;
+    color: #85ddf3;
+    text-decoration: none;
+}
+footer .link {
+    color: blue;
+}
+.banner {
+    max-width: 100%;
+}
+.tab-desk {
+    display: none;
+}
+.mobile {
+    display: block;
+}
+.round {
+    border-radius: 15px;
+    border-color: white;
+}
+#nav {
+    text-decoration: none;
+    color: black;
+}
+.resume h3 {
+    text-decoration: underline;
+}
+/*media query for tablet viewport*/
+@media screen and (min-width: 620px) {
+    /*tablet viewport: show tab-desk, hide mobile*/
+    .tab-desk {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    /*tablet viewport: style rules for nav area*/
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    nav li a {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    nav li a:hover {
+        color:black;
+        background-color: #35c4f4;
+    }
+}
+/*media query for desktop viewport*/
+@media screen and (min-width: 1000px) {
+    /*desktop viewport: stylerules for nav area*/
+    nav-li {
+        font-size: 1.5em;
+    }
+    nav li a {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    nav li a:hover {
+        color:black;
+        background-color: #35c4f4;
+    }
+    /*desktop viewport: style rules for main content*/
+    #info ul {
+        margin-left: 5%;
+    }
+}
+/*media query for large desktop viewports*/
+@media screen and (min-width:1921px) {
+    body {
+        background-image: linear-gradient(#239ad5, #001c47);
+    }
+    #wrapper {
+        width: 1920px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        background-color: #010b17;
+    }
+}
